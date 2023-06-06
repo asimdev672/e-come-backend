@@ -1,8 +1,8 @@
 const cloudinary = require("cloudinary");
 
 // Configuration
-console.log("process.env.CLOUDY_NAME", process.env.CLOUDY_NAME);
-console.log("process.env.API_KEY", process.env.API_KEY);
+// console.log("process.env.CLOUDY_NAME", process.env.CLOUDY_NAME);
+// console.log("process.env.API_KEY", process.env.API_KEY);
 cloudinary.config({
   cloud_name: "ducbkgshz",
   api_key: "981831431479331",
