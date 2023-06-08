@@ -10,6 +10,8 @@ const blogCatRout = require("./routes/blogCatRoute");
 const productCatRout = require("./routes/productCatRoute");
 const brandRout = require("./routes/brandRoute");
 const coupnRout = require("./routes/coupnRoute");
+const colorRout = require("./routes/colorRoute");
+const enqRout = require("./routes/enqRoute");
 const { notFound, errorHandler } = require("./middelwares/errorHandler");
 
 app.use("/api/user", authRout);
@@ -18,7 +20,9 @@ app.use("/api/blog", blogRout);
 app.use("/api/blogcategory", blogCatRout);
 app.use("/api/productcategory", productCatRout);
 app.use("/api/brand", brandRout);
-app.use("/api/coupn", coupnRout);
+app.use("/api/coupon", coupnRout);
+app.use("/api/color", colorRout);
+app.use("/api/enquiry", enqRout);
 
 //************middel ware ******************
 app.use(notFound);
